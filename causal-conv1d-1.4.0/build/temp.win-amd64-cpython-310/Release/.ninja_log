@@ -1,0 +1,6 @@
+# ninja log v7
+0	13327	8023546573827187	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/causal-conv1d-1.4.0/build/temp.win-amd64-cpython-310/Release/csrc/causal_conv1d.obj	b08d3f8f4a0a827a
+1	13912	8024386784907792	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/causal-conv1d-1.4.0/build/temp.win-amd64-cpython-310/Release/csrc/causal_conv1d.obj	54c21672599eac97
+396	16999	8024386788869107	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/causal-conv1d-1.4.0/build/temp.win-amd64-cpython-310/Release/csrc/causal_conv1d_fwd.obj	1fcfbc6ea77b9fbb
+449	21171	8024386789397981	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/causal-conv1d-1.4.0/build/temp.win-amd64-cpython-310/Release/csrc/causal_conv1d_update.obj	c05882adc4580217
+344	144528	8024386788343214	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/causal-conv1d-1.4.0/build/temp.win-amd64-cpython-310/Release/csrc/causal_conv1d_bwd.obj	b52b3744d0fef207

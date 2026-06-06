@@ -1,0 +1,21 @@
+# ninja log v7
+1	12735	8023631899017696	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/mamba-2.2.2/build/temp.win-amd64-cpython-310/Release/csrc/selective_scan/selective_scan.obj	b5c68005afe76a16
+12764	102208	8023632026643534	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/mamba-2.2.2/build/temp.win-amd64-cpython-310/Release/csrc/selective_scan/selective_scan_bwd_bf16_complex.obj	796d3b353365cd50
+102228	166221	8023632921281373	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/mamba-2.2.2/build/temp.win-amd64-cpython-310/Release/csrc/selective_scan/selective_scan_bwd_bf16_real.obj	87856908de68fee8
+166240	255964	8023633561409882	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/mamba-2.2.2/build/temp.win-amd64-cpython-310/Release/csrc/selective_scan/selective_scan_bwd_fp16_complex.obj	18990be73e419197
+255988	319976	8023634458880661	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/mamba-2.2.2/build/temp.win-amd64-cpython-310/Release/csrc/selective_scan/selective_scan_bwd_fp16_real.obj	ad62ce7740dbc747
+319997	407428	8023635098982023	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/mamba-2.2.2/build/temp.win-amd64-cpython-310/Release/csrc/selective_scan/selective_scan_bwd_fp32_complex.obj	8d9fe5b34ed1dc7c
+407450	469960	8023635973510701	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/mamba-2.2.2/build/temp.win-amd64-cpython-310/Release/csrc/selective_scan/selective_scan_bwd_fp32_real.obj	916626e4689f125f
+469983	506868	8023636598842425	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/mamba-2.2.2/build/temp.win-amd64-cpython-310/Release/csrc/selective_scan/selective_scan_fwd_bf16.obj	c7a724d33d8338e4
+506876	544015	8023636967768341	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/mamba-2.2.2/build/temp.win-amd64-cpython-310/Release/csrc/selective_scan/selective_scan_fwd_fp16.obj	488eb6a0fbb56ad5
+544023	580855	8023637339235835	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/mamba-2.2.2/build/temp.win-amd64-cpython-310/Release/csrc/selective_scan/selective_scan_fwd_fp32.obj	ff9fe527e297e38b
+7	22315	8024390065198775	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/mamba-2.2.2/build/temp.win-amd64-cpython-310/Release/csrc/selective_scan/selective_scan.obj	cfed27fc13dc2b81
+546	66310	8024390070592530	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/mamba-2.2.2/build/temp.win-amd64-cpython-310/Release/csrc/selective_scan/selective_scan_fwd_fp32.obj	db97639ad25d57ee
+407	68143	8024390069195071	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/mamba-2.2.2/build/temp.win-amd64-cpython-310/Release/csrc/selective_scan/selective_scan_fwd_bf16.obj	55132e4fbded9350
+484	68178	8024390069976323	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/mamba-2.2.2/build/temp.win-amd64-cpython-310/Release/csrc/selective_scan/selective_scan_fwd_fp16.obj	9905ce7989de0f05
+332	112431	8024390068450653	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/mamba-2.2.2/build/temp.win-amd64-cpython-310/Release/csrc/selective_scan/selective_scan_bwd_fp32_real.obj	5f467579ee8d9975
+76	114733	8024390065890397	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/mamba-2.2.2/build/temp.win-amd64-cpython-310/Release/csrc/selective_scan/selective_scan_bwd_bf16_real.obj	667ea995a45e38a1
+183	115573	8024390066958799	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/mamba-2.2.2/build/temp.win-amd64-cpython-310/Release/csrc/selective_scan/selective_scan_bwd_fp16_real.obj	5392ada2d316c383
+244	145720	8024390067570267	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/mamba-2.2.2/build/temp.win-amd64-cpython-310/Release/csrc/selective_scan/selective_scan_bwd_fp32_complex.obj	52804248c8074a8c
+14	146619	8024390065270614	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/mamba-2.2.2/build/temp.win-amd64-cpython-310/Release/csrc/selective_scan/selective_scan_bwd_bf16_complex.obj	cc4c2ffa548b845d
+129	147007	8024390066424145	D:/PycharmProjects/Ore DeepLearning-MMD/mamba-for-windows/mamba-2.2.2/build/temp.win-amd64-cpython-310/Release/csrc/selective_scan/selective_scan_bwd_fp16_complex.obj	26dac1761c6eb863
