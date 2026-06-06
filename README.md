@@ -99,13 +99,13 @@ pip uninstall -y triton causal-conv1d mamba-ssm
 CMD：
 
 ```bat
-cd /d "D:\PycharmProjects\Ore DeepLearning-MMD\mamba2_for_windows"
+cd /d "D:\PycharmProjects\mamba2_for_windows"
 ```
 
 PowerShell：
 
 ```powershell
-Set-Location -LiteralPath "D:\PycharmProjects\Ore DeepLearning-MMD\mamba2_for_windows"
+Set-Location -LiteralPath "D:\PycharmProjects\mamba2_for_windows"
 ```
 
 ### 3. 安装 Windows 版 Triton
@@ -127,7 +127,7 @@ python .\test_scripts\triton_test.py
 CMD：
 
 ```bat
-cd /d "D:\PycharmProjects\Ore DeepLearning-MMD\mamba2_for_windows\causal-conv1d-1.4.0"
+cd /d "D:\PycharmProjects\mamba2_for_windows\causal-conv1d-1.4.0"
 set CAUSAL_CONV1D_FORCE_BUILD=TRUE
 python setup.py install
 ```
@@ -135,7 +135,7 @@ python setup.py install
 PowerShell：
 
 ```powershell
-Set-Location -LiteralPath "D:\PycharmProjects\Ore DeepLearning-MMD\mamba2_for_windows\causal-conv1d-1.4.0"
+Set-Location -LiteralPath "D:\PycharmProjects\mamba2_for_windows\causal-conv1d-1.4.0"
 $env:CAUSAL_CONV1D_FORCE_BUILD = "TRUE"
 python setup.py install
 ```
@@ -153,7 +153,7 @@ pip show causal-conv1d
 CMD：
 
 ```bat
-cd /d "D:\PycharmProjects\Ore DeepLearning-MMD\mamba2_for_windows\mamba-2.2.2"
+cd /d "D:\PycharmProjects\mamba2_for_windows\mamba-2.2.2"
 set MAMBA_FORCE_BUILD=TRUE
 python setup.py install
 ```
@@ -161,7 +161,7 @@ python setup.py install
 PowerShell：
 
 ```powershell
-Set-Location -LiteralPath "D:\PycharmProjects\Ore DeepLearning-MMD\mamba2_for_windows\mamba-2.2.2"
+Set-Location -LiteralPath "D:\PycharmProjects\mamba2_for_windows\mamba-2.2.2"
 $env:MAMBA_FORCE_BUILD = "TRUE"
 python setup.py install
 ```
@@ -179,7 +179,7 @@ pip show mamba-ssm
 回到本目录：
 
 ```bat
-cd /d "D:\PycharmProjects\Ore DeepLearning-MMD\mamba2_for_windows"
+cd /d "D:\PycharmProjects\mamba2_for_windows"
 python .\test_scripts\mamba_test.py
 ```
 
