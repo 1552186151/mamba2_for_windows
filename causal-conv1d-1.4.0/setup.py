@@ -121,6 +121,51 @@ def append_nvcc_threads(nvcc_extra_args):
     return nvcc_extra_args + ["--threads", "4"]
 
 
+# Build only for the current NVIDIA GPU architecture to reduce compile memory.
+# This is especially important on Windows/MSVC, where compiling many gencode
+# targets may trigger C1060 "compiler heap space exhausted".
+def add_single_cuda_arch(cc_flag):
+    gpu_name = ""
+    major, minor = None, None
+
+    if torch.cuda.is_available():
+        try:
+            gpu_name = torch.cuda.get_device_name(0)
+            major, minor = torch.cuda.get_device_capability(0)
+        except Exception:
+            pass
+
+    # Prefer actual runtime capability detected by PyTorch.
+    # Examples:
+    # GTX 1050 / Pascal      -> 6.1
+    # RTX 20 series / Turing -> 7.5
+    # RTX 30 series / Ampere -> 8.6
+    # RTX 40 series / Ada    -> 8.9
+    # RTX 50 series / Blackwell -> 12.0
+    if major is not None and minor is not None:
+        arch = f"{major}{minor}"
+    else:
+        # Fallback by GPU name if PyTorch cannot query capability.
+        name = gpu_name.lower()
+        if any(x in name for x in ["1050", "1060", "1070", "1080"]):
+            arch = "61"
+        elif any(x in name for x in ["1650", "1660", "2060", "2070", "2080"]):
+            arch = "75"
+        elif any(x in name for x in ["3050", "3060", "3070", "3080", "3090"]):
+            arch = "86"
+        elif any(x in name for x in ["4050", "4060", "4070", "4080", "4090"]):
+            arch = "89"
+        elif any(x in name for x in ["5050", "5060", "5070", "5080", "5090"]):
+            arch = "120"
+        else:
+            # Safe default for your current machine: RTX 4090.
+            arch = "89"
+
+    print(f"Detected GPU: {gpu_name}, using CUDA arch sm_{arch}")
+
+    cc_flag.append("-gencode")
+    cc_flag.append(f"arch=compute_{arch},code=sm_{arch}")
+
 cmdclass = {}
 ext_modules = []
 
@@ -189,8 +234,10 @@ if not SKIP_CUDA_BUILD:
         #     cc_flag.append("arch=compute_90,code=sm_90")
 
         # RTX 4090 only: Ada Lovelace, compute capability 8.9
-        cc_flag.append("-gencode")
-        cc_flag.append("arch=compute_89,code=sm_89")
+        # cc_flag.append("-gencode")
+        # cc_flag.append("arch=compute_89,code=sm_89")
+
+        add_single_cuda_arch(cc_flag)
 
     # HACK: The compiler flag -D_GLIBCXX_USE_CXX11_ABI is set to be the same as
     # torch._C._GLIBCXX_USE_CXX11_ABI
